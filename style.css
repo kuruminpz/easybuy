@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  input, button {
+    margin: 5px;
+  }
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  .container {
+    max-width: 390px; /* largura comum de celulares */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px;
+  }
+  
+  .logo-icon {
+    height: 40px;
+  }
+  
+  .logo-text-block {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-top: 2px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px; /* opcional, deixa o bloco mais compacto */
+    margin: 0 auto;    /* centraliza no meio da tela */
+  }
+  .botoes-acao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+  }
