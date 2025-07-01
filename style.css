@@ -16,7 +16,7 @@ body {
     text-align: left;
   }
   .container {
-    max-width: 390px; /* largura comum de celulares */
+    max-width: 420px; /* largura comum de celulares */
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -55,12 +55,69 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 300px; /* opcional, deixa o bloco mais compacto */
-    margin: 0 auto;    /* centraliza no meio da tela */
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
+
+  .input-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .input-row input {
+    flex: 1;
+    min-width: 0; /* evita estouro lateral */
+    box-sizing: border-box;
+  }
+
   .botoes-acao {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     gap: 10px;
+  }
+
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+
+  }
+  
+  .tabela th, .tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 100px;
+  }
+  
+  .tabela td {
+    font-weight: normal;
+  }
+
+
+  .tabela tr:first-child th {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .tabela tr:last-child td {
+    border-bottom: none;
+  }
+
+  .btn-delete {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #c00;
+  }
+  
+  .btn-delete:hover {
+    color: #f00;
   }
